@@ -1,0 +1,214 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('../images/background.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.save-the-date {
+    font-family: 'Great Vibes', cursive; /* Font chữ rõ ràng, đẹp */
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bóng chữ để nổi bật */
+    margin-bottom: 20px;
+    position: relative; /* Đảm bảo hiển thị trên overlay */
+    z-index: 2; /* Đưa lên trên overlay */
+}
+
+/* Hình ảnh cặp đôi */
+.couple-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.couple-img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Để thêm số vào góc */
+}
+
+/* Thêm số vào góc dưới giữa của từng ảnh */
+.couple-img::after {
+    content: '02 11 24'; /* Số bạn yêu cầu */
+    position: absolute;
+    bottom: 10px; /* Khoảng cách từ dưới */
+    left: 50%; /* Căn giữa ngang */
+    transform: translateX(-50%); /* Điều chỉnh để căn giữa chính xác */
+    font-family: 'Arial', sans-serif; /* Font đơn giản, rõ ràng */
+    font-size: 1.2rem;
+    color: #fff; /* Màu trắng như yêu cầu */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Bóng chữ để nổi bật */
+    z-index: 1; /* Đảm bảo số hiển thị trên ảnh */
+}
+
+/* Cặp số cho từng ảnh */
+.couple-img:nth-child(1)::after { content: '02'; }
+.couple-img:nth-child(2)::after { content: '11'; }
+.couple-img:nth-child(3)::after { content: '24'; }
+
+.content h2 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.date {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Nút điều khiển nhạc */
+.music-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.music-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Phần thông tin chi tiết */
+.details {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+.details h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Phần gallery */
+.gallery {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #333;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .save-the-date {
+        font-size: 2.5rem;
+    }
+    .couple-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .couple-img {
+        width: 200px;
+        height: 300px;
+    }
+    .couple-img::after {
+        font-size: 1rem;
+    }
+    .content h2 {
+        font-size: 2.5rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+    .date {
+        font-size: 1.5rem;
+    }
+    .details h2, .gallery h2 {
+        font-size: 2rem;
+    }
+    .music-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
