@@ -220,6 +220,32 @@ footer a:hover {
     color: #fff;
 }
 
+/* Footer links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-links a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .save-the-date {
@@ -252,4 +278,84 @@ footer a:hover {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
+}
+
+/* Event details */
+.event-details {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.event-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-icons .icon {
+    text-align: center;
+}
+
+/* Timeline */
+.timeline {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.timeline-content {
+    font-size: 1.2rem;
+}
+
+/* Couple story */
+.couple-story {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.story-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.story {
+    text-align: center;
+}
+
+/* Guestbook */
+.guestbook {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.guestbook form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.guestbook input,
+.guestbook textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.guestbook button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guestbook button:hover {
+    background: #555;
 }
