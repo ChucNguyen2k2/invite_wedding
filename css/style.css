@@ -42,7 +42,7 @@ body {
     font-size: 5rem;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bóng chữ để nổi bật */
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     position: relative; /* Đảm bảo hiển thị trên overlay */
     z-index: 2; /* Đưa lên trên overlay */
 }
@@ -112,7 +112,7 @@ body {
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.1s;
 }
 
 .music-btn:hover {
