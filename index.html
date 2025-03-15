@@ -4,118 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hồng Mây & Văn Trọng - Thiệp Cưới Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
+    <div class="hero">
         <div class="overlay"></div>
         <div class="content">
-            <h1 class="save-the-date">Save the Date</h1>
-            <div class="couple-images">
-                <img src="images/photo1.jpg" alt="Couple Photo 1" class="couple-img">
-                <img src="images/photo2.jpg" alt="Couple Photo 2" class="couple-img">
-                <img src="images/photo3.jpg" alt="Couple Photo 3" class="couple-img">
+            <div class="hero-layout">
+                <!-- Cột trái: Ảnh cưới và số 20 -->
+                <div class="hero-column left">
+                    <img src="images/photo3.JPG" alt="Cô dâu" class="hero-image">
+                    <div class="date-number">20</div>
+                    <div class="leaf-decoration left-leaf"></div>
+                </div>
+    
+                <!-- Cột giữa: Hình tay đeo nhẫn và số 03 -->
+                <div class="hero-column center">
+                    <img src="images/photo1.JPG" alt="Tay đeo nhẫn" class="hero-image">
+                    <div class="date-number">03</div>
+                    <div class="flower-decoration"></div>
+                </div>
+    
+                <!-- Cột phải: Ảnh cặp đôi và số 23 -->
+                <div class="hero-column right">
+                    <img src="images/photo2.jpg" alt="Cặp đôi" class="hero-image">
+                    <div class="date-number">23</div>
+                    <div class="leaf-decoration right-leaf"></div>
+                </div>
             </div>
-            <h2>Hồng Mây & Văn Trọng</h2>
-            <p>Chào mừng bạn đến với ngày hạnh phúc của chúng tôi</p>
-            <p class="date">02.11.2024</p>
+    
+            <div class="hero-text">
+                <p class="invite-text">VUI LÒNG THAM DỰ CÙNG CHÚNG TÔI KHI CHÚNG TÔI KỶ NIỆM NGÀY CƯỚI</p>
+                <h2 class="couple-name">Hồng Mây & Văn Trọng</h2>
+                <p class="location">Nhà số 1 - Ngõ 1 - Xóm Trầm - Liên Châu - Thanh Oai - Hà Nội</p>
+            </div>
+        </div>
+    </div>
+    <div id="particles-js" class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="save-the-date animate__animated animate__fadeInDown">Save The Date</h1>
+            <div class="couple-names animate__animated animate__fadeInUp">
+                <h2>Hồng Mây <span>&</span> Văn Trọng</h2>
+            </div>
+            <p class="welcome-text animate__animated animate__fadeIn">Chào mừng bạn đến với ngày hạnh phúc của chúng tôi</p>
+            <p class="date animate__animated animate__zoomIn">02.11.2024</p>
             <button id="music-toggle" class="music-btn">Tắt Nhạc</button>
         </div>
-    </header>
+    </div>
 
-    <section class="details">
-        <h2>Thông Tin Sự Kiện</h2>
-        <p>Thời gian: 10:00, Thứ Hai, Ngày 02/11/2024</p>
-        <p>Địa điểm: Nhà số 1 - Ngõ 1 - Xóm Trầm - Liên Châu - Thanh Oai - Hà nội </p>
+    <section class="details section">
+        <h2 class="section-title">Thông Tin Sự Kiện</h2>
+        <div class="details-content">
+            <p><strong>Thời gian:</strong> 10:00, Thứ Hai, Ngày 02/11/2024</p>
+            <p><strong>Địa điểm:</strong> Nhà số 1 - Ngõ 1 - Xóm Trầm - Liên Châu - Thanh Oai - Hà Nội</p>
+            <a href="https://g.co/kgs/tHqv6o8" target="_blank" class="map-btn">Xem Bản Đồ</a>
+        </div>
     </section>
 
-    <section class="gallery">
-        <h2>Khoảnh Khắc Đẹp</h2>
+    <section class="gallery section">
+        <h2 class="section-title">Khoảnh Khắc Đẹp</h2>
         <div class="gallery-container">
-            <img src="images/backgroud.png" alt="Ảnh cưới 1">
-            <img src="images/photo2.jpg" alt="Ảnh cưới 2">
-            <img src="images/photo3.jpg" alt="Ảnh cưới 3">
-            <img src="images/photo4.jpg" alt="Ảnh cưới 4">
+            <img src="images/photo1.jpg" alt="Ảnh cưới 1" loading="lazy">
+            <img src="images/photo2.jpg" alt="Ảnh cưới 2" loading="lazy">
+            <img src="images/photo3.jpg" alt="Ảnh cưới 3" loading="lazy">
+            <img src="images/photo4.jpg" alt="Ảnh cưới 4" loading="lazy">
         </div>
     </section>
 
-    <section class="event-details">
-        <h2>Thông Tin Quan Trọng</h2>
-        <div class="heart-grid">
-            <img src="images/photo1.jpg" alt="Photo 1" loading="lazy">
-            <img src="images/photo2.jpg" alt="Photo 2" loading="lazy">
-            <img src="images/photo3.jpg" alt="Photo 3" loading="lazy">
-            <img src="images/photo4.jpg" alt="Photo 4" loading="lazy">
-            <img src="images/photo5.jpg" alt="Photo 5" loading="lazy">
-            <img src="images/photo6.jpg" alt="Photo 6" loading="lazy">
-            <img src="images/photo7.jpg" alt="Photo 7" loading="lazy">
-            <img src="images/photo8.jpg" alt="Photo 8" loading="lazy">
-            <img src="images/photo9.jpg" alt="Photo 9" loading="lazy">
-            <img src="images/photo10.jpg" alt="Photo 10" loading="lazy">
-            <img src="images/photo11.jpg" alt="Photo 11" loading="lazy">
-            <img src="images/photo12.jpg" alt="Photo 12" loading="lazy">
-            <img src="images/photo13.jpg" alt="Photo 13" loading="lazy">
-            <img src="images/photo14.jpg" alt="Photo 14" loading="lazy">
-            <img src="images/photo15.jpg" alt="Photo 15" loading="lazy">
-            <img src="images/photo16.jpg" alt="Photo 16" loading="lazy">
-        </div>
-    </section>
-
-    <section class="timeline">
-        <h2>Timeline</h2>
+    <section class="timeline section">
+        <h2 class="section-title">Lịch Trình</h2>
         <div class="timeline-content">
-            <p>10:00 - Đón Khách</p>
-            <p>11:00 - Lễ Vu Quy</p>
-            <p>12:00 - Tiệc Cưới</p>
+            <div class="timeline-item">
+                <span class="time">10:00</span>
+                <p>Đón Khách</p>
+            </div>
+            <div class="timeline-item">
+                <span class="time">11:00</span>
+                <p>Lễ Vu Quy</p>
+            </div>
+            <div class="timeline-item">
+                <span class="time">12:00</span>
+                <p>Tiệc Cưới</p>
+            </div>
         </div>
     </section>
 
-    <section class="couple-story">
-        <h2>Câu Chuyện Của Chúng Tôi</h2>
+    <section class="couple-story section">
+        <h2 class="section-title">Câu Chuyện Của Chúng Tôi</h2>
         <div class="story-content">
             <div class="story">
-                <h3>Chú Rể</h3>
-                <p>Quang Vinh</p>
+                <h3>Cô Dâu</h3>
+                <p>Hồng Mây</p>
+                <p>Một người yêu sự lãng mạn và luôn tin vào tình yêu đích thực.</p>
             </div>
             <div class="story">
-                <h3>Cô Dâu</h3>
-                <p>Nhật Hà</p>
+                <h3>Chú Rể</h3>
+                <p>Văn Trọng</p>
+                <p>Một người ấm áp, luôn mang lại niềm vui cho người khác.</p>
             </div>
         </div>
     </section>
 
-    <section class="guestbook">
-        <h2>Sổ Lưu Niệm</h2>
-        <form>
-            <label for="name">Tên:</label>
-            <input type="text" id="name" name="name">
-            <label for="message">Lời nhắn:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Gửi</button>
+    <section class="guestbook section">
+        <h2 class="section-title">Sổ Lưu Niệm</h2>
+        <form id="guestbook-form">
+            <input type="text" id="name" name="name" placeholder="Tên của bạn" required>
+            <textarea id="message" name="message" placeholder="Lời nhắn yêu thương" required></textarea>
+            <button type="submit">Gửi Lời Chúc</button>
         </form>
     </section>
 
     <footer>
-        <div class="footer-links">
-            <a href="https://www.facebook.com/chuc2811/" target="_blank">
-                <img src="images/facebook-icon.png" alt="Facebook">
-                Facebook
-            </a>
-            <a href="https://www.google.com/maps/place/B%C3%A1nh+Gi%C3%B2+N%C3%B3ng+Tu%E1%BA%A5n+%C4%90i%E1%BB%87p/@20.8117053,105.8310502,17.08z/data=!4m6!3m5!1s0x3135b5334163434b:0x3f7c512f8f535a49!8m2!3d20.813127!4d105.8327634!16s%2Fg%2F11sttpx6g5?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
-                <img src="images/google-maps-icon.png" alt="Google Maps">
-                Google Maps
-            </a>
+        <div class="footer-content">
+            <p>Cảm ơn bạn đã đến chung vui cùng chúng tôi!</p>
+            <div class="footer-links">
+                <a href="https://www.facebook.com/chuc2811/" target="_blank">
+                    <img src="images/facebook-icon.png" alt="Facebook"> Facebook
+                </a>
+                <a href="https://g.co/kgs/tHqv6o8" target="_blank">
+                    <img src="images/google-maps-icon.png" alt="Google Maps"> Google Maps
+                </a>
+            </div>
         </div>
-        <p>Cảm ơn bạn đã đến chung vui cùng chúng tôi!</p>
     </footer>
 
     <audio id="background-music" loop>
         <source src="audio/wedding-song.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ âm thanh.
     </audio>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
